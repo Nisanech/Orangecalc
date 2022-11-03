@@ -1,0 +1,70 @@
+:root {
+    /* Fuente */
+    --fuentePrincipal: 'League Spartan', sans-serif;
+    --negro: #35352C;
+    --blanco: #FFFFFF;
+    --amarillo: #FFE53D;
+    --negroOscuro: #1B2428;
+
+    /* ModoClaro */
+    --fondoPrincipal: #E6E6E6;
+    --fondoPantalla: #EDEDED;
+    --fondoTeclado: #D1CCCC;
+
+    --teclaNumeroFondo: #E5E4E1;
+    --teclaNumeroSombra: #A69D91;
+    --teclaOperadorFondo: #377F86;
+    --teclaOperadorSombra: #1B5F65;
+    --teclaFuncionesFondo: #CA5502;
+    --teclaFuncionesSombra: #893901;  
+    
+    /* ModoOscuro*/
+    --fondoPrincipal: #160628;
+    --fondoPantalla: #1D0934;
+    --fondoTeclado: #1D0934;
+
+    --teclaNumeroFondo: #58077D;
+    --teclaNumeroSombra: #BC15F4;
+    --teclaOperadorFondo: #341C4F;
+    --teclaOperadorSombra: #871C9C;
+    --teclaFuncionesFondo: #00E0D1;
+    --teclaFuncionesSombra: #6CF9F2;  
+}
+
+/** Globales **/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+    background-color: var(--blanco);
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: .5rem;
+    border-radius: .5rem;
+    font-weight: 700;
+}
