@@ -19,16 +19,16 @@
     --teclaFuncionesSombra: #893901;  
     
     /* ModoOscuro*/
-    --fondoPrincipal: #160628;
-    --fondoPantalla: #1D0934;
-    --fondoTeclado: #1D0934;
+    --fondoPrincipalDrk: #160628;
+    --fondoPantallaDrk: #1D0934;
+    --fondoTecladoDrk: #1D0934;
 
-    --teclaNumeroFondo: #58077D;
-    --teclaNumeroSombra: #BC15F4;
-    --teclaOperadorFondo: #341C4F;
-    --teclaOperadorSombra: #871C9C;
-    --teclaFuncionesFondo: #00E0D1;
-    --teclaFuncionesSombra: #6CF9F2;  
+    --teclaNumeroFondoDrk: #58077D;
+    --teclaNumeroSombraDrk: #BC15F4;
+    --teclaOperadorFondoDrk: #341C4F;
+    --teclaOperadorSombraDrk: #871C9C;
+    --teclaFuncionesFondoDrk: #00E0D1;
+    --teclaFuncionesSombraDrk: #6CF9F2;  
 }
 
 /** Globales **/
@@ -45,6 +45,8 @@ body {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     line-height: 1.8;
+    display: flex;
+    justify-content: center;
 }
 
 img {
@@ -67,4 +69,47 @@ img {
     padding: .5rem;
     border-radius: .5rem;
     font-weight: 700;
+}
+
+/*
+    *==================
+    *    Modo Claro
+    *==================
+*/
+.calculadora {
+    background-color: var(--fondoPrincipal);
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30%;
+}
+
+.header h1 {
+    color: #CA5502;
+    font-size: 2.4rem;
+}
+
+.header img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.header img:hover {
+    cursor: pointer;
+}
+
+.pantalla {
+    margin: 3rem auto;
+    padding: 2.5rem 2rem;
+    max-width: 100%;
+    background-color: var(--fondoPantalla);
+    border-radius: .5rem;
+    text-align: end;
+    font-size: 2.4rem;
+    color: var(--negro);
 }
