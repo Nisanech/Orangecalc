@@ -47,6 +47,7 @@ body {
     line-height: 1.8;
     display: flex;
     justify-content: center;
+    background-color: var(--fondoPrincipal);
 }
 
 img {
@@ -58,17 +59,6 @@ img {
     max-width: 120rem;
     margin: 0 auto;
     width: 90%;
-    background-color: var(--blanco);
-}
-
-.btn {
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    padding: .5rem;
-    border-radius: .5rem;
-    font-weight: 700;
 }
 
 /*
@@ -77,9 +67,8 @@ img {
     *==================
 */
 .calculadora {
-    background-color: var(--fondoPrincipal);
     width: 100%;
-    padding: 0 2rem;
+    padding: 2rem;
 }
 
 .header {
@@ -107,9 +96,57 @@ img {
     margin: 3rem auto;
     padding: 2.5rem 2rem;
     max-width: 100%;
+    word-wrap: break-word;
     background-color: var(--fondoPantalla);
     border-radius: .5rem;
     text-align: end;
     font-size: 2.4rem;
     color: var(--negro);
+}
+
+.teclado {
+    padding: 2rem;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 4rem);
+    grid-template-rows: repeat(6, 4rem);
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--fondoTeclado);
+    border-radius: .5rem;
+}
+
+.tecla {
+    padding: 0 .6rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--negro);
+    background-color: var(--teclaNumeroFondo);
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 2px 0 0 var(--teclaNumeroSombra);
+}
+
+.tecla:hover {
+    cursor: pointer;
+}
+
+.tecla-operador {
+    background-color: var(--teclaOperadorFondo);
+    box-shadow: 0 2px 0 0 var(--teclaOperadorSombra);
+    color: var(--blanco);
+}
+
+.tecla-operador img {
+    filter: invert(100%);
+}
+
+.tecla-funcion {
+    background-color: var(--teclaFuncionesFondo);
+    box-shadow: 0 2px 0 0 var(--teclaFuncionesSombra);
+    color: var(--blanco);
+}
+
+.tecla-funcion span {
+    font-size: 1.3rem;
 }
