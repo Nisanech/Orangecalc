@@ -55,12 +55,6 @@ img {
     display: block;
 }
 
-.contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 90%;
-}
-
 /*
     *==================
     *    Modo Claro
@@ -71,6 +65,12 @@ img {
     padding: 2rem;
 }
 
+@media (min-width: 768px) { 
+    .calculadora {
+        width: 50%;
+    }
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -78,14 +78,33 @@ img {
     margin-top: 30%;
 }
 
+@media (min-width: 1024px) { 
+    .header {
+        margin-top: 15%;
+    }
+}
+
 .header h1 {
     color: #CA5502;
     font-size: 2.4rem;
 }
 
+@media (min-width: 1024px) { 
+    .header h1 {
+        font-size: 3.2rem;
+    }
+}
+
 .header img {
     width: 3rem;
     height: 3rem;
+}
+
+@media (min-width: 1024px) { 
+    .header img {
+        width: 4rem;
+        height: 4rem;
+    }
 }
 
 .header img:hover {
@@ -104,27 +123,47 @@ img {
     color: var(--negro);
 }
 
+@media (min-width: 1024px) { 
+    .pantalla {
+        margin-top: 5rem;
+        font-size: 3.2rem;
+    }
+}
+
 .teclado {
-    padding: 2rem;
-    max-width: 100%;
+    padding: 4rem 2rem;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 4rem);
-    grid-template-rows: repeat(6, 4rem);
+    grid-template-columns: repeat(5, 4.5rem);
+    grid-template-rows: repeat(6, 4.5rem);
     justify-content: center;
     gap: 2rem;
     background-color: var(--fondoTeclado);
     border-radius: .5rem;
 }
 
+@media (min-width: 1024px) { 
+    .teclado {
+        grid-template-columns: repeat(5, 6rem);
+        grid-template-rows: repeat(6, 6rem);
+    }
+}
+
 .tecla {
     padding: 0 .6rem;
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-align: center;
     color: var(--negro);
     background-color: var(--teclaNumeroFondo);
     border: none;
     border-radius: .5rem;
     box-shadow: 0 2px 0 0 var(--teclaNumeroSombra);
+}
+
+@media (min-width: 1024px) { 
+    .tecla {
+        font-size: 3.2rem;
+    }
 }
 
 .tecla:hover {
