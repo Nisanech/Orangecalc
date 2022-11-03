@@ -60,6 +60,7 @@ img {
     *    Modo Claro
     *==================
 */
+
 .calculadora {
     width: 100%;
     padding: 2rem;
@@ -188,4 +189,48 @@ img {
 
 .tecla-funcion span {
     font-size: 1.3rem;
+}
+
+/*
+    *==================
+    *    Modo Oscuro
+    *==================
+*/
+
+.fondo {
+    background-color: var(--fondoPrincipalDrk);
+}
+
+.header-drk h1 {
+    color: var(--amarillo);
+}
+
+.header-drk img {
+    filter: invert(100%);
+}
+
+.pantalla-drk {
+    background-color: var(--fondoPantallaDrk);
+    color: var(--amarillo);
+}
+
+.teclado-drk {
+    background-color: var(--fondoTecladoDrk);
+}
+
+.tecla-drk {
+    color: var(--amarillo);
+    background-color: var(--teclaNumeroFondoDrk);
+    box-shadow: 0 2px 0 0 var(--teclaNumeroSombraDrk);
+}
+
+.tecla-operador-drk {
+    background-color: var(--teclaOperadorFondoDrk);
+    box-shadow: 0 2px 0 0 var(--teclaOperadorSombraDrk);
+}
+
+.tecla-funcion-drk {
+    background-color: var(--teclaFuncionesFondoDrk);
+    box-shadow: 0 2px 0 0 var(--teclaFuncionesSombraDrk);
+    color: var(--negroOscuro);
 }
