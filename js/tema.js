@@ -1,7 +1,7 @@
 // Variable para el botón del tema
 const btnTema = document.querySelector( '#btn-tema' );
 
-// Variables para los elementos que tendrán el tema oscuro
+// Fondos
 const header = document.querySelector( '#header' );
 const display = document.querySelector( '.display' );
 const teclado = document.querySelector( '#teclado' );
@@ -30,8 +30,20 @@ const opeSum = document.querySelector( '#opeSum' );
 const opeDec = document.querySelector( '#opeDec' );
 const opeRes = document.querySelector( '#opeRes' );
 
+// Teclas funciones
+const funcPi = document.querySelector( '#funcPi' );
+const funcLn = document.querySelector( '#funcLn' );
+const funcRaiz = document.querySelector( '#funcRaiz' );
+const funcIgual = document.querySelector( '#funcIgual' );
+const funcPot = document.querySelector( '#funcPot' );
+const funcSigno = document.querySelector( '#funcSigno' );
+const funcCos = document.querySelector( '#funcCos' );
+const funcSen = document.querySelector( '#funcSen' );
+const funcTan = document.querySelector( '#funcTan' );
+
 // Capturar evento: Agregar clases del modo oscuro al presionar el botón
 btnTema.addEventListener( 'click', function() {
+  // Fondos
   document.body.classList.toggle( 'modo-drk' );
   header.classList.toggle( 'header-drk' );
   display.classList.toggle( 'pantalla-drk' );
@@ -59,5 +71,16 @@ btnTema.addEventListener( 'click', function() {
   opeMult.classList.toggle( 'tecla-operador-drk' );
   opeSum.classList.toggle( 'tecla-operador-drk' ); 
   opeDec.classList.toggle( 'tecla-operador-drk' ); 
-  opeRes.classList.toggle( 'tecla-operador-drk' ); 
+  opeRes.classList.toggle( 'tecla-operador-drk' );
+
+  // Teclas funciones
+  funcPi.classList.toggle( 'tecla-funcion-drk' ); 
+  funcLn.classList.toggle( 'tecla-funcion-drk' ); 
+  funcRaiz.classList.toggle( 'tecla-funcion-drk' ); 
+  funcIgual.classList.toggle( 'tecla-funcion-drk' );
+  funcPot.classList.toggle( 'tecla-funcion-drk' );
+  funcSigno.classList.toggle( 'tecla-funcion-drk' );
+  funcCos.classList.toggle( 'tecla-funcion-drk' );
+  funcSen.classList.toggle( 'tecla-funcion-drk' );
+  funcTan.classList.toggle( 'tecla-funcion-drk' );
 });
