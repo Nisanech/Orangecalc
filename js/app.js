@@ -62,6 +62,11 @@ function pi() {
   pantalla.textContent = 3.14159265359;
 }
 
+// Función para la raíz cuadrada
+function raiz() {
+  pantalla.textContent = Math.sqrt(pantalla.textContent, 2);
+}
+
 // Función trigonometrica: Seno
 function seno() {
   pantalla.textContent = Math.sin(pantalla.textContent);
