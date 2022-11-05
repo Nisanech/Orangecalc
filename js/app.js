@@ -7,8 +7,6 @@ const teclaIgual = document.getElementsByName('data-igual')[0];
 
 // Variables para las operaciones
 var operacionActual = '';
-var operacionAnterior = '';
-var operacion = undefined;
 
 /*
   * EVENTOS
@@ -21,7 +19,11 @@ teclas.forEach( function( tecla ) {
   });
 });
 
-
+// Captuar evento: Mostrar resultado con la tecla =
+teclaIgual.addEventListener( 'click', function(){
+  calcular();
+  actualizarPantalla();
+});
 
 // Capturar evento: Borrar todo el contenido de la pantalla
 teclaResetear.addEventListener( 'click', function() {
@@ -46,11 +48,18 @@ function agregarTecla( valor ) {
   actualizarPantalla();
 }
 
+// Función para mostrar el resultado en pantalla
+function calcular() {
+  var calculo;
+
+  calculo = eval(pantalla.textContent);
+
+  operacionActual = calculo;
+}
+
 // Función para borrar todo el contenido de la pantalla
 function resetear() {
   operacionActual = '';
-  operacionAnterior = '';
-  operacion = undefined;
 }
 
 // Función para borrar un valor de la pantalla
@@ -59,8 +68,6 @@ function borrar() {
 
   resetear();
 }
-
-
 
 // Función para actualizar la pantalla
 function actualizarPantalla() {
