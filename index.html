@@ -29,32 +29,32 @@
         <div class="pantalla display" id="pantalla"></div>
 
         <div class="teclado" id="teclado">
-            <button class="tecla tecla-operador tecla-mostrar">(</button>
-            <button class="tecla tecla-operador tecla-mostrar">)</button>
-            <button class="tecla tecla-operador tecla-mostrar">%</button>
-            <button class="tecla tecla-operador" name="data-resetear">C</button>
-            <button class="tecla tecla-operador" name="data-borrar">
+            <button class="tecla tecla-operador tecla-mostrar" id="opeParenA">(</button>
+            <button class="tecla tecla-operador tecla-mostrar" id="opeParenC">)</button>
+            <button class="tecla tecla-operador tecla-mostrar" id="opeMod">%</button>
+            <button class="tecla tecla-operador" name="data-resetear" id="opeC">C</button>
+            <button class="tecla tecla-operador" name="data-borrar" id="opeBorrar">
                 <img src="img/arrow-left.svg" alt="Icono">
             </button>
-            <button class="tecla tecla-mostrar">7</button>
-            <button class="tecla tecla-mostrar">8</button>
-            <button class="tecla tecla-mostrar">9</button>
-            <button class="tecla tecla-operador tecla-mostrar">/</button>
+            <button class="tecla tecla-mostrar" id="num7">7</button>
+            <button class="tecla tecla-mostrar" id="num8">8</button>
+            <button class="tecla tecla-mostrar" id="num9">9</button>
+            <button class="tecla tecla-operador tecla-mostrar" id="opeDiv">/</button>
             <button class="tecla tecla-funcion" onclick="pi()">&pi;</button>
-            <button class="tecla tecla-mostrar">4</button>
-            <button class="tecla tecla-mostrar">5</button>
-            <button class="tecla tecla-mostrar">6</button>
-            <button class="tecla tecla-operador tecla-mostrar">*</button>
+            <button class="tecla tecla-mostrar" id="num4">4</button>
+            <button class="tecla tecla-mostrar" id="num5">5</button>
+            <button class="tecla tecla-mostrar" id="num6">6</button>
+            <button class="tecla tecla-operador tecla-mostrar" id="opeMult">*</button>
             <button class="tecla tecla-funcion">ln</button>
-            <button class="tecla tecla-mostrar">1</button>
-            <button class="tecla tecla-mostrar">2</button>
-            <button class="tecla tecla-mostrar">3</button>
-            <button class="tecla tecla-operador tecla-mostrar">+</button>
+            <button class="tecla tecla-mostrar" id="num1">1</button>
+            <button class="tecla tecla-mostrar" id="num2">2</button>
+            <button class="tecla tecla-mostrar" id="num3">3</button>
+            <button class="tecla tecla-operador tecla-mostrar" id="opeSum">+</button>
             <button class="tecla tecla-funcion" onclick="raiz()">&Sqrt;</button>
-            <button class="tecla tecla-mostrar">0</button>
-            <button class="tecla tecla-operador tecla-mostrar">.</button>
+            <button class="tecla tecla-mostrar" id="num0">0</button>
+            <button class="tecla tecla-operador tecla-mostrar" id="opeDec">.</button>
             <button class="tecla tecla-funcion" name="data-igual">=</button>
-            <button class="tecla tecla-operador tecla-mostrar">-</button>
+            <button class="tecla tecla-operador tecla-mostrar" id="opeRes">-</button>
             <button class="tecla tecla-funcion" onclick="potencia()">x<span>2</span></button>
             <button class="tecla tecla-funcion">&#177;</button>
             <button class="tecla tecla-funcion" onclick="coseno()">cos</button>
