@@ -57,6 +57,11 @@ function calcular() {
   operacionActual = calculo;
 }
 
+// Función para pi
+function pi() {
+  pantalla.textContent = 3.14159265359;
+}
+
 // Función trigonometrica: Seno
 function seno() {
   pantalla.textContent = Math.sin(pantalla.textContent);
