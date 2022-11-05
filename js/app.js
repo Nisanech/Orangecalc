@@ -67,6 +67,11 @@ function raiz() {
   pantalla.textContent = Math.sqrt(pantalla.textContent, 2);
 }
 
+// Función para calcular la potencia cuadrada
+function potencia() {
+  pantalla.textContent = Math.pow(pantalla.textContent, 2);
+}
+
 // Función trigonometrica: Coseno
 function coseno() {
   pantalla.textContent = Math.cos(pantalla.textContent);
