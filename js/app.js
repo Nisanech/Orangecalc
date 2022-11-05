@@ -16,8 +16,8 @@ var operacion = undefined;
 
 // Capturar evento: Teclado numérico y operadores
 teclas.forEach( function( tecla ) {
-  tecla.addEventListener( 'click', function(){
-    agregarTecla( tecla.innerText );
+  tecla.addEventListener('click', function(){
+    agregarTecla(tecla.innerText);
   });
 });
 
