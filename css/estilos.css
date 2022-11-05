@@ -48,7 +48,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: var(--fondoPrincipal);
-    transition: .4s ease all;
+    transition: .5s ease all;
 }
 
 img {
