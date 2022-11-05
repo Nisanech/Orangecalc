@@ -1,7 +1,11 @@
 // Variable para el botón del tema
 const btnTema = document.querySelector( '#btn-tema' );
 
-// Capturar evento: Agregar clase al presionar el botón
+// Variables para los elementos que tendrán el tema oscuro
+const header = document.querySelector( '#header' );
+
+// Capturar evento: Agregar clases del modo oscuro al presionar el botón
 btnTema.addEventListener( 'click', function() {
   document.body.classList.toggle( 'modo-drk' );
-})
+  header.classList.toggle("header-drk");
+});
