@@ -18,6 +18,18 @@ const tecla8 = document.querySelector( '#num8' );
 const tecla9 = document.querySelector( '#num9' );
 const tecla0 = document.querySelector( '#num0' );
 
+// Teclas operadores
+const opeParenA = document.querySelector( '#opeParenA' );
+const opeParenC = document.querySelector( '#opeParenC' );
+const opeMod = document.querySelector( '#opeMod' );
+const opeC = document.querySelector( '#opeC' );
+const opeBorrar = document.querySelector( '#opeBorrar' );
+const opeDiv = document.querySelector( '#opeDiv' );
+const opeMult = document.querySelector( '#opeMult' );
+const opeSum = document.querySelector( '#opeSum' );
+const opeDec = document.querySelector( '#opeDec' );
+const opeRes = document.querySelector( '#opeRes' );
+
 // Capturar evento: Agregar clases del modo oscuro al presionar el botón
 btnTema.addEventListener( 'click', function() {
   document.body.classList.toggle( 'modo-drk' );
@@ -36,4 +48,16 @@ btnTema.addEventListener( 'click', function() {
   tecla8.classList.toggle( 'tecla-drk' );
   tecla9.classList.toggle( 'tecla-drk' );
   tecla0.classList.toggle( 'tecla-drk' );
+
+  // Teclas operadores
+  opeParenA.classList.toggle( 'tecla-operador-drk' );
+  opeParenC.classList.toggle( 'tecla-operador-drk' );
+  opeMod.classList.toggle( 'tecla-operador-drk' ); 
+  opeC.classList.toggle( 'tecla-operador-drk' );
+  opeBorrar.classList.toggle( 'tecla-operador-drk' );
+  opeDiv.classList.toggle( 'tecla-operador-drk' );
+  opeMult.classList.toggle( 'tecla-operador-drk' );
+  opeSum.classList.toggle( 'tecla-operador-drk' ); 
+  opeDec.classList.toggle( 'tecla-operador-drk' ); 
+  opeRes.classList.toggle( 'tecla-operador-drk' ); 
 });
