@@ -12,9 +12,20 @@ var operacion = undefined;
 
 // Capturar evento: Teclado numérico y operadores
 teclas.forEach( function( tecla ) {
-  tecla.addEventListener('click', function(){
-    agregarTecla(tecla.innerText);
+  tecla.addEventListener( 'click', function(){
+    agregarTecla( tecla.innerText );
   });
+});
+
+// Capturar evento: Borrar todo el contenido de la pantalla
+teclaResetear.addEventListener( 'click', function() {
+  resetear();
+  actualizarPantalla();
+});
+
+// Capturar evento: Borrar un valor de la pantalla
+teclaBorrar.addEventListener( 'click', function() {
+  borrar();
 });
 
 // Función para agregar el valor de la tecla seleccionada
@@ -22,6 +33,20 @@ function agregarTecla( valor ) {
   operacionActual = operacionActual.toString() + valor.toString();
 
   actualizarPantalla();
+}
+
+// Función para borrar todo el contenido de la pantalla
+function resetear() {
+  operacionActual = '';
+  operacionAnterior = '';
+  operacion = undefined;
+}
+
+// Función para borrar un valor de la pantalla
+function borrar() {
+  pantalla.textContent = pantalla.textContent.substring(0, pantalla.textContent.length - 1);
+
+  resetear();
 }
 
 // Función para actualizar la pantalla
