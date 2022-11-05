@@ -77,6 +77,10 @@ function seno() {
   pantalla.textContent = Math.sin(pantalla.textContent);
 }
 
+// Función trigonometrica: Tangente
+function tangente() {
+  pantalla.textContent = Math.tan(pantalla.textContent);
+}
 
 // Función para borrar todo el contenido de la pantalla
 function resetear() {
