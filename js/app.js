@@ -67,6 +67,11 @@ function raiz() {
   pantalla.textContent = Math.sqrt(pantalla.textContent, 2);
 }
 
+// Función trigonometrica: Coseno
+function coseno() {
+  pantalla.textContent = Math.cos(pantalla.textContent);
+}
+
 // Función trigonometrica: Seno
 function seno() {
   pantalla.textContent = Math.sin(pantalla.textContent);
